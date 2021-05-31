@@ -34,7 +34,7 @@ available_capacity_dose2 : {}
 available_capacity : {}
 min_age_limit: {}
 Time Slots: {}
-        
+
 '''.format(area['address'],area['pincode'],area['available_capacity_dose1'],area['available_capacity_dose2'],
                              area['available_capacity'],area['min_age_limit'],str(area['slots'])[1:-1])
             output+="*"*30
@@ -67,3 +67,63 @@ Subject:{}
 
 # send_email("innovateyourself2build@gmail.com",'test mail')
 # print(Dose_Availability_Pincode(110052,"31-05-2021"))
+
+
+# def prime_number(num):
+#     flag = False
+#
+#     # prime numbers are greater than 1
+#     if num > 1:
+#         # check for factors
+#         for i in range(2, num):
+#             if (num % i) == 0:
+#                 # if factor is found, set flag to True
+#                 flag = True
+#                 # break out of loop
+#                 break
+#     elif num == 2:
+#         Flag = True
+#     # check if flag is True
+#     if flag:
+#         return False
+#     else:
+#         return True
+#
+#
+# def prime_numbers(l, n):
+#     x = []
+#
+#     for i in range(l, n-1 ):
+#         if prime_number(i) == True:
+#             x.append(i)
+#             # print(i)
+#             break
+#     # print('*****')
+#
+#     for j in range(n-1, l-1,-1):
+#         # print(j)
+#         if prime_number(j) == True:
+#             x.append(j)
+#             break
+#     return x
+#
+#
+# def out(t):
+#     l, r = input().split()
+#     # x = set([prime(i) for i in range(int(l), int(r) + 1) if i != None]).difference({None})
+#     # tuple(filter(prime, range(int(l), int(r) + 1)))
+#     # print(x)
+#     # print(max(x), min(x))
+#     x = prime_numbers(int(l), int(r) + 1)
+#     # print(x)
+#     print(max(x) - min(x)) if len(x) >= 2 else print(0) if len(x) == 1 else print(-1)
+#
+#
+# def main():
+#     t = int(input())
+#     if t >= 1 and t <= 10:
+#         tuple(map(out, range(t)))
+#
+#
+# # print(prime(999997))
+# main()
